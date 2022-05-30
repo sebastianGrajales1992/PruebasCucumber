@@ -1,0 +1,7 @@
+
+@Banco
+Scenario: Como usuario deseo realizar login a la pagina # src/test/resources/features/BanCoGeneral.feature:7
+  Given Navego al sitio web del banco                   # steps.BancoGeneralSteps.navegar()
+  When Le doy click al boton de entendido               # steps.BancoGeneralSteps.clickEntendido()
+  And Le doy click a banca en linea                     # steps.BancoGeneralSteps.clickBancaLinea()
+  And Escribo el usuario                                # steps.BancoGeneralSteps.EscribirUsuaruo()
