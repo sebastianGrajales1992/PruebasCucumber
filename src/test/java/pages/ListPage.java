@@ -40,8 +40,8 @@ public class ListPage extends BasePage{
         
     }
 
-    public void metodoRamaA(){
-        
+    public void metodoTestHead(){
+
     }
 
 
