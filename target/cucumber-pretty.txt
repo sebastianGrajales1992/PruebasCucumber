@@ -1,7 +1,6 @@
 
-@Banco
-Scenario: Como usuario deseo realizar login a la pagina # src/test/resources/features/BanCoGeneral.feature:7
-  Given Navego al sitio web del banco                   # steps.BancoGeneralSteps.navegar()
-  When Le doy click al boton de entendido               # steps.BancoGeneralSteps.clickEntendido()
-  And Le doy click a banca en linea                     # steps.BancoGeneralSteps.clickBancaLinea()
-  And Escribo el usuario                                # steps.BancoGeneralSteps.EscribirUsuaruo()
+@ColorHover
+Scenario: Revisar color de boton al hacer hover  # src/test/resources/features/AlertTest.feature:44
+  Given Navegar al sitio web donde esta el alert # steps.AlertSteps.navegar()
+  When Como usuario hago hover en boton          # steps.AlertSteps.hoverButton()
+  Then Como usuario valido el color del hover    # steps.AlertSteps.obtenerColorBoton()

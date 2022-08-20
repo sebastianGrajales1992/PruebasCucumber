@@ -58,4 +58,13 @@ public class AlertPage extends BasePage{
         }
         
     }
+
+    public void hoverButton() throws InterruptedException{
+        hoverElement(locator);
+        Thread.sleep(2000);
+    }
+
+    public String obtenerColorShowAlert(){
+        return obtenerColor(locator);
+    }
 }

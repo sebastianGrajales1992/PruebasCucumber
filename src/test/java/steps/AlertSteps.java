@@ -2,11 +2,11 @@ package steps;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import javafx.scene.paint.Color;
 import pages.AlertPage;
 
 public class AlertSteps {
@@ -99,5 +99,20 @@ public class AlertSteps {
     public void validarExistenciaTexto(){
         boolean valorReal = alertPage.existeTexto();
         assertFalse(valorReal);
+    }
+
+    @When("^Como usuario hago hover en boton$")
+    public void hoverButton() throws InterruptedException{
+        alertPage.hoverButton();
+    }
+
+    @Then("^Como usuario valido el color del hover$")
+    public void obtenerColorBoton(){
+        String color = alertPage.obtenerColorShowAlert();
+        //String colorReal = Color.valueOf(color).toString();
+        //String colorExperado = Color.DARKGREEN.toString();
+        String colorReal = org.openqa.selenium.support.Color.fromString(color).toString();
+        String colorExperado = org.openqa.selenium.support.Color.fromString("DARKGREEN").toString();
+        assertEquals(colorExperado, colorReal);
     }
 }

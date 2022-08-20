@@ -34,8 +34,13 @@ Examples:
     | cat  | aceptar  | cat            |
     | dog  | aceptar  | dog            |
 
-@Alert
+@smoke
 Scenario: Validar funcionamiento show prompt box cuando se da cancelar
 When Como usuario doy click en el boton show prompt box
 And Como usuario en prompt doy click en cancelar
 Then Como usuario Espero no visualizar el texto
+
+@ColorHover
+Scenario: Revisar color de boton al hacer hover
+When Como usuario hago hover en boton
+Then Como usuario valido el color del hover

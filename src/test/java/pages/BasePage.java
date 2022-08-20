@@ -136,4 +136,8 @@ public class BasePage {
     public void switchToParentFrame(){
         driver.switchTo().parentFrame();
     }
+
+    public String  obtenerColor(String locator){
+        return find(locator).getCssValue("background-color");
+    }
 }

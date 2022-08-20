@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.42">
-<testcase classname="Testear flujo navegacion pagina banco general" name="Como usuario deseo realizar login a la pagina" time="23.213">
-<system-out><![CDATA[Given Navego al sitio web del banco.........................................passed
-When Le doy click al boton de entendido.....................................passed
-And Le doy click a banca en linea...........................................passed
-And Escribo el usuario......................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.635">
+<testcase classname="Test a los alert de la pagina" name="Revisar color de boton al hacer hover" time="10.261">
+<system-out><![CDATA[Given Navegar al sitio web donde esta el alert..............................passed
+When Como usuario hago hover en boton.......................................passed
+Then Como usuario valido el color del hover.................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
