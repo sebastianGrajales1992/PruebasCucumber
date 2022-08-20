@@ -40,5 +40,9 @@ public class ListPage extends BasePage{
         
     }
 
+    public void metodoTestHead(){
+        
+    }
+
 
 }
