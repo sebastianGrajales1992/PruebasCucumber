@@ -31,7 +31,10 @@ public class ListPage extends BasePage{
         return stringFromList;
     }
 
-    
+
+    public void test(){
+        
+    }
 
 
 }
