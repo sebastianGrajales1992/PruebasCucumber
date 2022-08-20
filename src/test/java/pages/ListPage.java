@@ -32,6 +32,8 @@ public class ListPage extends BasePage{
     }
 
     
-
+    public void funcion2(){
+        
+    }
 
 }
